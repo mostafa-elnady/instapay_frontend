@@ -33,7 +33,7 @@ const UserTransactions= () => {
             <TableCell sx={{textAlign:'center'}}>Sender </TableCell>
             <TableCell sx={{textAlign:'center'}} >Reciver</TableCell>
             <TableCell sx={{textAlign:'center'}}>amount</TableCell>
-            <TableCell sx={{textAlign:'center'}} >Description</TableCell>
+            <TableCell sx={{textAlign:'center'}} >Options</TableCell>
 
           
           </TableRow>
