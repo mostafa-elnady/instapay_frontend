@@ -1,0 +1,15 @@
+{
+    "Login":"Login",
+    "email":"E-mail",
+    "Password":"Password",
+    "Email is required":"Email is required",
+    "Password is required":"Password is required",
+    "Passsword should have at least 3 character":"Passsword should have at least 3 character",
+    "The email is incorrect":"The email is incorrect",
+    "The password is incorrect":"The password is incorrect",
+    "Logged in successfully":"Logged in successfully",
+    "Control Panel":"Control Panel",
+    "Profile":"Profile",
+    "Logout":"Logout"
+
+}

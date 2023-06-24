@@ -1,0 +1,16 @@
+{
+    "Login":"تسجيل الدخول",
+    "email":"البريد اللإلكتروني",
+    "Password":"كلمة المرور",
+    "Email is required":"قم بتسجيل البريد الإلكتروني",
+    "Password is required":"قم بتسجيل كلمة المرور",
+    "Passsword should have at least 3 character":"يجب أن تحتوي كلمة المرور على 3 أحرف على الأقل",
+    "The email is incorrect":"البريد الالكتروني غير صحيح",
+    "The password is incorrect":"كلمة المرور غير صحيحه",
+    "Logged in successfully":"تم تسجيل الدخول بنجاح",
+    "Control Panel":"لوحة التحكم",
+    "Profile":"الملف الشخصي",
+   "Logout":"تسجيل الخروج"
+
+
+}

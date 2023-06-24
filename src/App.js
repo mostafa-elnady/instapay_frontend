@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import { Navigate, Route, Routes } from "react-router-dom";
+import ProtectedRouteHook from "./hook/auth/ProtectedRouteHook";
+import ProtectedRoute from "./utilities/ProtectedRoute";
+import Home from './pages/home/HomePage'
+import NavBar from "./components/shared/NavBar"
+import Login from './components/auth/Login';
+import ProfilePage from './pages/user/ProfilePage';
+import WalletPage from './pages/user/WalletPage';
+import AddTransactionPage from './pages/user/AddTransactionPage';
+
 
 function App() {
+
+  const [userLogged] = ProtectedRouteHook()
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      
+      <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route element={<ProtectedRoute isLoogedIn={userLogged} />}>
+      <Route index element={<Home />} />
+      <Route path='/profile' element={<ProfilePage/>} />
+      <Route path='/transactions' element={<WalletPage/>} />
+      <Route path='/addTransaction' element={<AddTransactionPage/>} />
+     
+     </Route>
+
+     <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
     </div>
   );
 }
