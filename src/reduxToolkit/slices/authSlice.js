@@ -13,7 +13,7 @@ export const login = createAsyncThunk("/authSlice/login", async (data) => {
     console.log("errror");
     console.log(error);
     if (error.message === "Network Error" && !error.response)
-      return notify("Network Error - make sure Api is Running ", "error");
+      return notify("Network Error ", "error");
     return error.response;
   }
 });
@@ -31,7 +31,7 @@ export const register = createAsyncThunk(
       console.log("errror");
       console.log(error);
       if (error.message === "Network Error" && !error.response)
-        return notify("Network Error - make sure Api is Running ", "error");
+        return notify("Network Error  ", "error");
       return error.response;
     }
   }

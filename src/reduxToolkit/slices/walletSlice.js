@@ -16,7 +16,7 @@ export const getAllUserTransactions = createAsyncThunk(
       console.log("errror");
       console.log(error);
       if (error.message === "Network Error" && !error.response)
-        return notify("Network Error - make sure Api is Running ", "error");
+        return notify("Network Error  ", "error");
       return error.response;
     }
   }
@@ -35,7 +35,7 @@ export const addUserTransaction = createAsyncThunk(
       console.log("errror");
       console.log(error);
       if (error.message === "Network Error" && !error.response)
-        return notify("Network Error - make sure Api is Running ", "error");
+        return notify("Network Error ", "error");
       return error.response;
     }
   }
@@ -54,7 +54,7 @@ export const getAllUsers = createAsyncThunk(
         console.log("errror");
         console.log(error);
         if (error.message === "Network Error" && !error.response)
-          return notify("Network Error - make sure Api is Running ", "error");
+          return notify("Network Error ", "error");
         return error.response;
       }
     }
